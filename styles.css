@@ -1,0 +1,99 @@
+:root {
+  --yellow: hsl(47, 88%, 63%);
+  --White: hsl(0, 0%, 100%);
+  --Grey: hsl(0, 0%, 50%);
+  --Black: hsl(0, 0%, 7%);
+  --bold: 800;
+  --semibold: 600;
+  --font-family: 'Figtree', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: var(--font-family);
+  font-weight: var(--semibold);
+  line-height: 1.4;;
+}
+
+.page {
+  background-color: var(--yellow);
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.card {
+  background-color: var(--White);
+  padding: 2rem;
+  border: 1px solid var(--Black);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 40rem;
+  gap: 1.8rem;
+  box-shadow: 7px 7px var(--Black);
+}
+
+.card:hover{
+  cursor: pointer;
+}
+
+.card__image {
+  width: 100%;
+  border-radius: 10px;
+
+}
+
+.card__tag {
+  background-color: var(--yellow);
+  padding: 1rem 1rem;
+  border-radius: 10px;
+  font-weight: var(--bold);
+  width: 18%;
+  font-size: 1.1rem;
+}
+
+.card__date {
+  font-size: 1.5rem;
+}
+
+.card__title {
+  font-size: 2.5rem;
+
+}
+
+.card__title:hover {
+  color: var(--yellow);
+}
+
+.card__content {
+  color: var(--Grey);
+  font-size: 1.6rem;
+}
+
+.card__author { 
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.card__author__profile {
+  height: 4rem;
+  width: 4rem;
+}
+
+.card__author__name {
+  font-weight: var(--bold);
+}
